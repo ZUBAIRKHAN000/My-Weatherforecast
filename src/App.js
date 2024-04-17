@@ -13,7 +13,7 @@ function WeatherApp() {
     try {
       const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
       setWeatherData(response.data);
-      setCity(''); // Clear the city input field after successful fetch
+       // Clear the city input field after successful fetch
     } catch (error) {
       console.error('Error fetching weather data:', error);
       setWeatherData(null);
@@ -27,6 +27,7 @@ function WeatherApp() {
         setMonitoredCities([...monitoredCities, { id: weatherData.id, name: weatherData.name }]);
       }
     }
+    setCity('');
   };
 
   useEffect(() => {
@@ -47,7 +48,7 @@ function WeatherApp() {
     };
 
     fetchMonitoredCitiesWeather();
-  }, [monitoredCities]); // Fetch weather data whenever monitoredCities list changes
+  }, [city]); // Fetch weather data whenever monitoredCities list changes
 
 
   return (

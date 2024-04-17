@@ -6,7 +6,9 @@
   background-color: #f0f0f0;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  bottom: auto;
+  
+  
+  
 }
 
 .heading {
@@ -17,6 +19,7 @@
 .inputContainer {
   display: flex;
   margin-bottom: 20px;
+  
 }
 
 .input {
@@ -44,6 +47,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  
 }
 
 .addButton {
@@ -65,9 +69,9 @@
 .cityList {
   list-style-type: none;
   padding: 0;
-  max-height: 6000px;
-  overflow-y: scroll;
-  bottom: auto;
+  max-height: 600px;
+  overflow-y: auto;
+  
   
 }
 
@@ -77,5 +81,6 @@
   margin-bottom: 10px;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
   
 }
